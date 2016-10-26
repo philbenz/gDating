@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="datingApp">
   <head>
     <meta charset="utf-8">
-    <title>Untitled</title>
+    <title>gDating</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -11,23 +11,21 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">gDating</a>
+          <a class="navbar-brand" href="home">gDating</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <li><a ui-sref="login">Login</a></li>
+            <li><a ui-sref="register">Register</a></li>
           </ul>
       </div>
     </nav>
+
     <!-- sample angular code -->
-    <row>
-      <div class="content">
-        <div ng-controller="mainController as mainCtrl">
-          {{ mainCtrl.greeting }}
-        </div>
-      </div>
-    </row>
+    <div class="content">
+      <div ui-view></div>
+    </div>
     <!-- end of angular code -->
+
     <footer>
       <div>
       <nav class="navbar navbar-default">
@@ -38,7 +36,6 @@
       </nav>
       </div>
     </footer>
-  </div>
     <!-- scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -46,7 +43,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/config.js"></script>
-    <!-- main component -->
-    <script type="text/javascript" src="js/components/main/main.controller.js"></script>
+
+    <!-- auth component -->
+    <script type="text/javascript" src="js/components/auth/auth.controller.js"></script>
+    <script type="text/javascript" src="js/components/auth/auth.service.js"></script>
+
+    <!-- member component -->
+    <script type="text/javascript" src="js/components/members/members.controller.js"></script>
+    <script type="text/javascript" src="js/components/members/members.service.js"></script>
+
+    <!-- search component -->
+    <script type="text/javascript" src="js/components/search/search.controller.js"></script>
+    <script type="text/javascript" src="js/components/search/search.service.js"></script>
+
+    <!-- profile component -->
+    <script type="text/javascript" src="js/components/profile/profile.controller.js"></script>
+    <script type="text/javascript" src="js/components/profile/profile.service.js"></script>
+
+
   </body>
 </html>

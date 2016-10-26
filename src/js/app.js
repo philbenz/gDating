@@ -5,9 +5,12 @@
   'use strict';
 
   angular
-    .module('myApp', [
-      'myApp.config',
-      'myApp.components.main'
+    .module('datingApp', [
+      'datingApp.config',
+      'datingApp.components.auth',
+      'datingApp.components.members',
+      'datingApp.components.profile',
+      'datingApp.components.search',
+      'ui.router'
     ]);
-
 })();

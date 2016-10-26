@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('myApp.config', [])
+    .module('datingApp.config', ['ui.router'])
     .config(appConfig);
 
   function appConfig() {}

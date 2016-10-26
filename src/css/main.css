@@ -1,7 +1,6 @@
 /* add custom styles */
 .content {
-  padding: 100;
-}
-header, footer {
-    height: 30px;
+  height:84vh;
+  display:flex;
+  flex-direction: column;
 }

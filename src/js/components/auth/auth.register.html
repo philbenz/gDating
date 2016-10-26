@@ -1,0 +1,16 @@
+<h2>Register</h2>
+<hr>
+
+<form ng-submit="authCtrl.register()" novalidate>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" ng-model="authCtrl.newUser.username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="text" class="form-control" id="password" ng-model="authCtrl.newUser.password">
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+</form>
