@@ -13,8 +13,5 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "run-sequence": "^1.2.2"
-  },
-  "engines": {
-    "node": "6.3.1"
-  },
+  }
 }
