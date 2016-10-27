@@ -3,14 +3,116 @@
 
 <form ng-submit="authCtrl.register()" novalidate>
   <div class="form-group">
-    <label for="username">Username</label>
-    <input type="text" class="form-control" id="username" ng-model="authCtrl.newUser.username">
+    <label for="username" class="col-sm-1 control-label">Username</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="username" ng-model="authCtrl.newUser.username">
+    </div>
   </div>
   <div class="form-group">
-    <label for="password">Password</label>
-    <input type="text" class="form-control" id="password" ng-model="authCtrl.newUser.password">
+    <label for="password" class="col-lg-1 control-label">Password</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="password" ng-model="authCtrl.newUser.password">
+    </div>
   </div>
   <div class="form-group">
-    <button type="submit" class="btn btn-success">Submit</button>
+    <label for="email" class="col-sm-1 control-label">Email</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="email" ng-model="authCtrl.newUser.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="first_name" class="col-sm-1 control-label">First Name</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="first_name" ng-model="authCtrl.newUser.names.firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="last_name" class="col-sm-1 control-label">Last Name</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="last_name" ng-model="authCtrl.newUser.names.lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="description" class="col-sm-1 control-label">Description</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="description" ng-model="authCtrl.newUser.description">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="avatar" class="col-sm-1 control-label">Avatar</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="avatar" ng-model="authCtrl.newUser.avatar">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="dob" class="col-sm-1 control-label">Date of Birth</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="dob" ng-model="authCtrl.newUser.dob">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone" class="col-sm-1 control-label">Phone</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="phone" ng-model="authCtrl.newUser.phone">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="zip" class="col-sm-1 control-label">Zip</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="zip" ng-model="authCtrl.newUser.address.zip">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="suite" class="col-sm-1 control-label">Suite</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="dob" ng-model="authCtrl.newUser.address.suite">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="city" class="col-sm-1 control-label">City</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="city" ng-model="authCtrl.newUser.address.city">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="street" class="col-sm-1 control-label">Street</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="street" ng-model="authCtrl.newUser.address.street">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="website" class="col-sm-1 control-label">Website</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="website" ng-model="authCtrl.newUser.website">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="company_name" class="col-sm-1 control-label">Comp Name</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="name" ng-model="authCtrl.newUser.company.name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="bs" class="col-sm-1 control-label">BS</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="bs" ng-model="authCtrl.newUser.company.bs">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="catchphrase" class="col-sm-1 control-label">Phrase</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="catchphrase" ng-model="authCtrl.newUser.company.catchphrase">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="gender" class="col-sm-1 control-label">Gender</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="gender" ng-model="authCtrl.newUser.gender">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12 button">
+      <button type="submit" class="btn btn-success">Submit</button>
+    </div>
   </div>
 </form>

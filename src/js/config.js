@@ -20,7 +20,13 @@
     })
     .state('home', {
       url: '/',
-      templateUrl: 'js/components/main/main.view.html',
+      templateUrl: 'js/components/main/main.view.html'
+    })
+    .state('members', {
+      url: '/members',
+      templateUrl: 'js/components/members/members.view.html',
+      controller: 'membersController',
+      controllerAs: 'membersCtrl'
     });
   }
 })();

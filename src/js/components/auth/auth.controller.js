@@ -6,28 +6,20 @@
     .module('datingApp.components.auth', [])
     .controller('authController', authController);
 
-  authController.$inject = [''];
+  authController.$inject = ['userService'];
 
-  function authController() {
+  function authController(userService) {
     /*jshint validthis: true */
     const vm = this;
     vm.user = {};
     vm.newUser = {};
 
-    // vm.onSubmit = function() {
-    //   userService.login(vm.user)
-    //   .then((user) => {
-    //     localStorage.setItem('token', user.data.token);
-    //   });
-    //   vm.user = {};
-    // };
-    //
-    // vm.register = function() {
-    //   userService.register(vm.newUser)
-    //   .then((user) => {
-    //     localStorage.setItem('token', user.data.token);
-    //   });
-    //   vm.newUser = {};
-    // };
+    vm.register = function() {
+      userService.register(vm.newUser)
+      .then((user) => {
+        localStorage.setItem('token', user.data.token);
+      });
+      vm.newUser = {};
+    };
   }
 })();
