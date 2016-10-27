@@ -1,3 +1,34 @@
-<h2>Members</h2>
 
-<h3>{{membersCtrl.greeting}}</h3>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="row">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a ui-sref="all">All</a></li>
+        <li><a ui-sref="popular">Register</a></li>
+        <li><a ui-sref="nearMe">Near Me</a></li>
+        <li><a ui-sref="myMatches">My Matches</a></li>
+        <li><a ui-sref="chatting">Chatting</a></li>
+      </ul>
+    </div>
+    <div ng-repeat="member in membersCtrl.members">
+      <hr>
+      <div class="row">
+      <div class="col-sm-4">
+        <img ng-src="{{ member.avatar }}">
+        <div ng-repeat="interests in member.interestedIn">
+          <p>Interests: {{ interests }}</p>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        {{ member.names.firstName}} {{ member.names.lastName }}
+        {{ member.description }}
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <p>A Cool Pic Goes Here Somewhere</p>
+    <!-- insert directive here -->
+  </div>
+</div>

@@ -14,6 +14,8 @@
     membersService.getAllMembers()
     .then((members) => {
       console.log('here are the members: ', members);
+      console.log('here is the first member: ', members.data.data[0]);
+      this.members = members.data.data;
     });
   }
 })();
